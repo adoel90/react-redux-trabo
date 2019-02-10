@@ -5,8 +5,17 @@ class BookingCalendarAvailable extends Component {
     render(){
 
         return(
-            <div>
-                <h1>Hai</h1>
+            <div className="App">
+                <header>
+                    <div id="logo">
+                        <span className="icon">Date_range</span>
+                        <br />
+                        <span>React<b>calendar</b></span>
+                    </div>
+                </header>
+                <main>
+                    {/* <Calendar />*/}
+                </main>
             </div>
         )
     }

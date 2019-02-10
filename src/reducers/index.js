@@ -4,13 +4,12 @@ import loginReducer from './login';
 import systemSessionLocalStorageReducer from './system-local-storage'
 import bookingCalendarReducer from './bookingCalendarReducer';
 
-const rootReducer = combineReducers({
-    // recipes: recipesReducer,
-    // ingredients : ingredientsReducer,
+// const rootReducer = combineReducers({
+export default combineReducers({
     user : userReducer,
     login: loginReducer,
     accessToken: systemSessionLocalStorageReducer,
     bookingCalendar:  bookingCalendarReducer
 });
 
-export default rootReducer;
+// export default rootReducer;

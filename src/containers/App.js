@@ -222,11 +222,7 @@ class App extends Component {
           </div>
 
           <div className="grid-item">
-            <button type="button" >
-              <Link to='/booking-calendar-available'>
-                Component Calendar
-              </Link>
-            </button>
+          
             
           </div>
         </div>
