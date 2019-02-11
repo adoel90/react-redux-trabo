@@ -43,7 +43,7 @@ export function* workerBookingCalendarAvailable(action){
         const body = {};
         const headers =  {
             // 'Authorization' : "Bearer "+ action.data.access_token
-            'Authorization' : action.data.token_type + " "+ action.data.access_token
+            'Authorization' : action.data != null ? action.data.token_type + " "+ action.data.access_token : "Bearer " + localStorage.getItem('accessToken')
         };
     
         //*Setting Axios - https://stackoverflow.com/questions/40988238/sending-the-bearer-token-with-axios **** axios.defaults.baseURL = 'http://localhost:1010/'; */    
